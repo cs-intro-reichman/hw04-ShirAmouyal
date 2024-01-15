@@ -29,19 +29,19 @@ public class StringOps {
         // Write your code here:
         String str="";
         for(int i=0;i<string.length();i++){
-            if(string.charAt(i)=='a'){
+            if(string.charAt(i)=='a' || string.charAt(i)=='A'){
                 str+='A';   
             }
-            else if(string.charAt(i)=='e'){
+            else if(string.charAt(i)=='e' || string.charAt(i)=='E'){
               str+='E';
             }
-            else if(string.charAt(i)=='i'){
+            else if(string.charAt(i)=='i' || string.charAt(i)=='I'){
              str+="I";
             }
-            else if(string.charAt(i)=='o'){
+            else if(string.charAt(i)=='o' || string.charAt(i)=='O'){
              str+="O";
             }
-            else if(string.charAt(i)=='u' ){
+            else if(string.charAt(i)=='u' || string.charAt(i)=='U'){
              str+="U";
             }
 
