@@ -20,13 +20,15 @@ public class ArrayOps {
         // Write your code here:
         int max=0;
         int max2=0;
+        int x=0;
         for(int i=0;i<array.length;i++){
             if(array[i]>max){
                 max=array[i];
+                x=i;
             }
         }
        for(int i=0;i<array.length;i++){
-        if(array[i]>max2 && array[i]<=max){
+        if(array[i]>max2 && array[i]<=max &&x!=i){
             max2=array[i];
         }
        }
