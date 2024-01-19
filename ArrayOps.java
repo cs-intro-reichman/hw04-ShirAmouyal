@@ -12,6 +12,7 @@ public class ArrayOps {
         for(int i=0;i<n;i++){
             sum+=array[i];
         }
+        // very nice!
         return originalSum-sum;
     }
    
@@ -20,7 +21,7 @@ public class ArrayOps {
         // Write your code here:
         int max=0;
         int max2=0;
-        int x=0;
+        int x=0; // not a good name 
         for(int i=0;i<array.length;i++){
             if(array[i]>max){
                 max=array[i];
@@ -45,6 +46,7 @@ public class ArrayOps {
             find=true;
           }
         }
+           // next time write if(!find) instead of == false
         if(find==false) return false;
        }
        return true;
