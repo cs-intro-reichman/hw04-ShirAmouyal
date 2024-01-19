@@ -29,6 +29,10 @@ public class StringOps {
         // Write your code here:
         String str="";
         for(int i=0;i<string.length();i++){
+            /* 
+  		why didn't you create a helper isVowel()?
+		could be a lot cleaner.
+  		*/
             if(string.charAt(i)=='a' || string.charAt(i)=='A'){
                 str+='A';   
             }
@@ -44,10 +48,18 @@ public class StringOps {
             else if(string.charAt(i)=='u' || string.charAt(i)=='U'){
              str+="U";
             }
+            /*instead of multiple if-else, you can do it on one line
+            by creating a String vowles="aeiouAEIOU" and check if vowels.indexOf(char) != -1
+            not good.
+                */
 
             else if(string.charAt(i)==32){
                 str+=" ";
             }
+                /* 
+	  		why didn't you create a helper isLetter()?
+			could be a lot more readable.
+	  		*/ 
             else if(string.charAt(i)>64 && string.charAt(i)<91){
                 str+=(char) (string.charAt(i)+32) ;
             }
@@ -59,6 +71,9 @@ public class StringOps {
     }
 
     public static String camelCase (String string) {
+    
+        /*********** Never, but NEVER comment in Hebrew**************/
+            
         // Write your code here:
         String str="";
         //אות גדולה בתו הראשון
@@ -103,6 +118,7 @@ public class StringOps {
                 str+=(char)(string.charAt(i));
             }
         } 
+        // your code is to complicated ,to much if-else
       return str; 
     }
 
